@@ -1,0 +1,267 @@
+
+
+/* Contact section styling */
+#contactarea {
+    background-color: #003366; /* Match navbar color */
+    background-image: none; /* Remove background image */
+    position: relative;
+    color: #ffffff; /* White text for contrast */
+    padding: 50px 0; /* Space around the section */
+  }
+  
+  .parallax-overlay {
+    display: none; /* Hide the overlay as it is not needed with the new color */
+  }
+  
+  .maintitle {
+    text-align: center; /* Center align the title and description */
+    color: #ffffff; /* White text color for title */
+  }
+  
+  .section-title {
+    font-family: Verdana, sans-serif; /* Match the font family */
+    font-weight: 600; /* Bold font for the section title */
+    font-size: 2.5em; /* Adjust font size for emphasis */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .lead {
+    font-size: 1.2em; /* Slightly larger font for the description */
+    margin-bottom: 40px; /* Space below the description */
+  }
+  
+  input[type="text"],
+textarea {
+    background-color: transparent; /* Transparent input background */
+    border: none; /* Remove border */
+    border-bottom: 2px solid #ffffff; /* Bottom border for inputs */
+    color: #ffffff; /* White text color */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Padding around text */
+    margin-bottom: 20px; /* Space below inputs */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #f9f0ff; /* Purple color on focus */
+    outline: none; /* Remove default focus outline */
+    box-shadow: none; /* Remove focus shadow */
+}
+
+input[type="submit"] {
+    background-color: #2584ff; /* Purple background color for submit button */
+    color: #ffffff; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1.1em; /* Font size for button */
+    cursor: pointer; /* Cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #5a0c9b; /* Darker purple on hover */
+}
+
+  /* About Us Section Styling */
+  #aboutus {
+    padding: 50px 0; /* Space around the section */
+    background-color: #f4f4f4; /* Light gray background */
+  }
+  
+  .about-text {
+    padding: 20px; /* Padding inside each column */
+    background-color: #ffffff; /* White background for each column */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .section-title {
+    font-family: Verdana, sans-serif; /* Font family for titles */
+    font-weight: 600; /* Bold font weight */
+    font-size: 2em; /* Font size for titles */
+    margin-bottom: 20px; /* Space below titles */
+  }
+  
+  p {
+    font-size: 1.1em; /* Font size for paragraph text */
+    line-height: 1.6; /* Line height for readability */
+    color: #333333; /* Dark gray text color */
+  }
+  
+  
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #8aaed1; /* Dark blue background */
+    color: #ffffff; /* White text */
+    padding: 20px; /* Increase padding for more space */
+  
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content:space-around; /* Space out the items */
+    align-items: center;
+  }
+  
+  /* Footer Sections */
+  .footer-section {
+    flex: 1; /* Allow sections to grow and shrink */
+    max-width: 300px; /* Limit the width of each section */
+    margin: 0 10px; /* Space between sections */
+  }
+  
+  /* Footer Headings */
+  .footer-heading {
+    color: #ffffff; /* White text for headings */
+    font-family: Verdana, sans-serif; /* Font family for headings */
+    font-weight: 600; /* Bold font weight */
+    margin-bottom: 15px; /* Space below headings */
+    font-size: 1.25em; /* Adjust font size */
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin-top: 10px; /* Space above icons */
+  }
+  
+  .social-icon {
+    color: #ffffff; /* White color for icons */
+    font-size: 1.5em; /* Icon size */
+    margin-right: 15px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .social-icon:hover {
+    color: #6a0dad; /* Purple color on hover */
+  }
+  
+  /* Footer Navigation */
+  .footer-nav {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .footer-nav li {
+    margin-bottom: 10px; /* Space between items */
+  }
+  
+  .footer-nav a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.9em; /* Adjust font size */
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Address Section */
+  address {
+    color: #ffffff; /* White text for address */
+  }
+  
+  address p {
+    margin-bottom: 10px; /* Space between address lines */
+    font-size: 0.9em; /* Adjust font size */
+  }
+  
+  address a {
+    color: #ffffff; /* White text for email links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  address a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+
+
+
+
+
+  * {
+    box-sizing: border-box;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 3px 0 0;
+}
+
+/* Dots */
+.dots {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+  

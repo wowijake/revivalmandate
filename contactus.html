@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Section styling */
+        .contact-section {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+        
+        /* Form styling */
+        .contact-form {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .form-control {
+            border-radius: 20px;
+            box-shadow: none;
+            border: 1px solid #ccc;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* Contact info styling */
+        .contact-info {
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h4 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .contact-info i {
+            color: #ffdd57;
+            margin-right: 10px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        /* Section title */
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+        <!-- Include your Navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Navbar code from the previous section -->
+            <a class="navbar-brand d-flex align-items-center text-light" href="index.html">
+                <img src="images/revival.jpg" class="logo img-fluid me-2" alt="Revival Mandate International" style="max-height: 40px;">
+                <span>
+                    Revival Mandate International
+                    <small class="d-block text-muted">Christian Organization</small>
+                </span>
+            </a>
+        </nav>
+    
+        <!-- About Section -->
+        <section id="section_2" class="py-5">
+            <div class="container">
+                <h2>Contact US</h2>
+                <p>is there anything you would like to communicate, feel free to reach out</p>
+            </div>
+        </section>
+    
+    <!-- Contact Section -->
+    <section id="section_6" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info text-white">
+                        <h4>Contact Information</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Street, Zomba, Malawi</p>
+                        <p><i class="fas fa-phone"></i> +265 1234 5678</p>
+                        <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h4 class="section-title">Get In Touch</h4>
+                        <form action="submit_contact.php" method="POST">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

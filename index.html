@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body {
+            background-color: #ffffff; /* Dark blue background */
+            color: #0e0e0e; /* Light text color */
+        }
+        .site-header {
+            background-color: #687cad; /* Darkish blue for header */
+        }
+        .navbar {
+            background-color: #0f3460; /* Dark blue for navbar */
+        }
+        .navbar-nav .nav-link {
+            color: #141414; /* Light color for nav links */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #00a8e1; /* Bright blue on hover */
+        }
+     
+    </style>
+
+    <title>Revival Mandate International</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-12 d-flex flex-wrap align-items-center">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi bi-geo-alt-fill me-2 text-primary"></i> Zomba, Malawi
+                    </p>
+                    <p class="d-flex mb-0">
+                        <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                        <a href="mailto:revivalmandate1@gmail.com" class="text-decoration-none text-light">
+                            revivalmandate1@gmail.com
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                    <ul class="social-icon list-unstyled d-flex justify-content-end mb-0">
+                        <li class="me-3">
+                            <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light"><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-light" href="index.html">
+                <img src="images/revival.jpg" class="logo img-fluid me-2" alt="Revival Mandate International" style="max-height: 80px;">
+                <span>
+                    Revival Mandate International
+                    <small class="d-block text-muted">Christian Organization</small>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="initiatives.html">Initiatives</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle click-scroll" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">programs</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="womenrevivalfest.html">Women Revival Fest</a></li>
+                            <li><a class="dropdown-item" href="news-detail.html">Teenage Strategy</a></li>
+                            <li><a class="dropdown-item" href="news-detail.html">Green Business Network</a></li>
+                            <li><a class="dropdown-item" href="news-detail.html">Revival Mandate Publications</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="contactus.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="images/fc.jpg" alt="Hands with sunset background">
+                <div class="text">This image represents a serene sunset with hands raised, symbolizing peace and reflection.</div>
+            </div>
+            <div class="slide">
+                <img src="images/sg.jpg" alt="Group of people studying outdoors">
+                <div class="text">This image showcases a group of students engaged in study, reflecting collaboration and teamwork.</div>
+            </div>
+        </div>
+    
+        <!-- Next and Previous buttons -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+    
+    <!-- Dots -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+   
+
+
+    
+    
+<!-- About Us Section -->
+<section id="aboutus" class="section">
+    <div class="container">
+  
+  
+      <div class="row">
+        <div class="col-md-5">
+          <div class="herotext">
+            <h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">About Revival <span class="lighter">Mandate</span></h1>
+            <p class="lead wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
+              Revival Mandate International is a revival network encompassing the revival mandate institutes, revival mandate publications, and revival mandate ministries.
+            </p>
+     
+          </div>
+        </div>
+        
+      </div>
+  
+  
+      <div class="row">
+        <!-- Our Mission -->
+        <div class="col-md-6">
+          <div class="about-text">
+            <h2 class="section-title">Our Mission</h2>
+            <p>
+              Our mission is to empower communities through innovative solutions and compassionate support. We strive to create meaningful impact and foster positive change.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Our Vision -->
+        <div class="col-md-6">
+          <div class="about-text">
+            <h2 class="section-title">Our Vision</h2>
+            <p>
+              Our vision is to equip the generation of women through the building of social competence skills. We envision a world where every individual has the opportunity to thrive and contribute to a better society.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+      
+
+  
+          
+   <!-- Footer 
+  <footer class="footer bg-light>
+    <div class="container">
+      <div class="row">
+        <!-- Footer Social Media Links 
+        <div class="col-md-4">
+          <h4 class="footer-heading">Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+      
+        <div class="col-md-4">
+          <h4 class="footer-heading">Our Location</h4>
+          <address>
+            <p>123 Main Street,<br> Cityville, ST 12345</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:revivalmandate1@gmail.com">revivalmandate1@gmail.com</a></p>
+          </address>
+        </div>
+    -->
+    <!-- Add Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ 
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.dot');
+    
+        showSlides(slideIndex);
+    
+        function showSlides(n) {
+            if (n >= slides.children.length) {
+                slideIndex = 0;
+            } else if (n < 0) {
+                slideIndex = slides.children.length - 1;
+            }
+            slides.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
+    
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (index === slideIndex) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+    
+        function moveSlide(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n - 1);
+        }
+    </script>
+
+
+
+
+</body>
+</html>
